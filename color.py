@@ -11,26 +11,6 @@ class Color:
     CYAN = '\033[96m'
     YELLOW = '\033[33m'
     
-class bold:
-    WHITE = "\033[1;00m"
-    NORMAL = "\033[1;0m"
-    RED = "\033[1;91m"
-    BLACK = "\033[1;5m"
-    GREEN = "\033[1;92m"
-    PURPLE = "\033[1;95m"
-    CYAN = '\033[1;96m'
-    YELLOW = '\033[1;33m'
-     
-class italic:
-    WHITE = "\033[3;00m"
-    NORMAL = "\033[3;0m"
-    RED = "\033[3;91m"
-    BLACK = "\033[3;5m"
-    GREEN = "\033[3;92m"
-    PURPLE = "\033[3;95m"
-    CYAN = '\033[3;96m'
-    YELLOW = '\033[3;33m'
-    
 
 class ColorCode ():
     def handle(code , color):
@@ -138,7 +118,7 @@ class Print:
         
             
         else:
-            # print(Print.color_list["white"] + message + Print.color_list["white"])
+      
             print(Print.color_list[f"{color}"] + message + Print.color_list["white"])
     
     
